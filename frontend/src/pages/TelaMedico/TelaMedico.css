@@ -1,0 +1,137 @@
+:root {
+    --tm-blue: #1f4ea1;
+    --tm-white: #ffffff;
+    --tm-ink: #0b0b0b;
+}
+
+/* --- ESTILOS DO CABEÇALHO (mesmas proporções de Prontuario) --- */
+.prontuario-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #184288;
+    padding: 20px 30px;
+    border-bottom: 2px solid #0d2965;
+    color: var(--tm-white);
+}
+
+.prontuario-logo {
+    height: 50px;
+}
+
+.prontuario-ident {
+    text-align: right;
+    line-height: 1.4;
+}
+
+.prontuario-ident strong {
+    font-size: 1.1em;
+}
+
+/* --- ESTILOS DO CORPO DA PÁGINA (AJUSTADOS PARA FICAREM IDÊNTICOS A PRONTUARIO) --- */
+.tm-screen {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--tm-blue);
+    color: var(--tm-white);
+    font-family: "Lexend", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+    padding-bottom: 48px; /* Adicionado para bater com prontuario */
+}
+
+.tm-main {
+    max-width: 1100px;
+    margin: 36px auto; /* Ajustado */
+    padding: 0 20px;   /* Ajustado */
+    display: flex;
+    flex-direction: column;
+    gap: 24px;       /* Ajustado */
+    width: 100%;
+}
+
+.tm-grid {
+    width: 100%; /* Ajustado para preencher o novo container */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 40px;
+}
+
+.tm-card {
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    text-decoration: none;
+    color: var(--tm-white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    padding: 40px 20px;
+    transition: all .3s ease;
+    backdrop-filter: blur(6px);
+}
+
+.tm-card:hover {
+    transform: translateY(-4px) scale(1.03);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .3);
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.tm-icon {
+    width: 80px;
+    height: 80px;
+    color: var(--tm-white);
+}
+
+.tm-label {
+    font-weight: 700;
+    font-size: 18px;
+    text-align: center;
+}
+
+.tm-actions {
+    text-align: center;
+    margin-top: 12px; /* Adicionado para consistência */
+}
+
+.tm-back-btn {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.45);
+    background: rgba(255,255,255,0.2);
+    color: #fff;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow: 0 6px 16px rgba(0,0,0,.25);
+}
+
+.tm-back-btn:hover {
+    transform: translateY(-2px);
+    background: rgba(255,255,255,0.28);
+}
+
+.tm-bottom-shadow {
+    height: 12px;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, .3));
+}
+
+@media (max-width: 980px) {
+    .tm-grid { grid-template-columns: repeat(2, minmax(220px, 1fr)); }
+}
+
+@media (max-width: 560px) {
+    .tm-grid {
+        grid-template-columns: 1fr;
+        gap: 26px;
+    }
+    .tm-icon {
+        width: 72px;
+        height: 72px;
+    }
+    .tm-label {
+        font-size: 17px;
+    }
+}

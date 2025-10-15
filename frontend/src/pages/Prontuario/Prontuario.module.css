@@ -1,0 +1,174 @@
+:root{
+  --azul:#1B4EA5;
+  --azul-escuro:#0e2f69;
+  --bg:#184da1;
+  --card:#103b86;
+  --stroke:rgba(255,255,255,.18);
+  --stroke-soft:rgba(255,255,255,.10);
+  --white:#fff;
+}
+
+.wrapper{
+  min-height:100dvh;
+  background: var(--azul);
+  color: var(--white);
+}
+
+/* ====== TOPBAR PACIENTE ====== */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  background: linear-gradient(180deg,var(--azul) 0%, #1b56b6 100%);
+  border-bottom:1px solid var(--stroke);
+}
+.headerInner{
+  max-width: 1180px;
+  margin: 0 auto;
+  padding:14px 20px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+}
+.logo{height:50px}
+
+.paciente{
+  margin-left:auto;
+  display:flex;
+  align-items:center;
+  gap:12px;
+  background: rgba(255,255,255,.06);
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  padding:10px 14px;
+  box-shadow: 0 10px 22px rgba(0,0,0,.12) inset;
+}
+.avatar{
+  width:44px;height:44px;border-radius:50%;
+  background:#eef;
+  border:2px solid var(--stroke);
+}
+.ident{line-height:1.1}
+.nome{margin:0;font-size:16px;font-weight:800}
+.meta{margin:2px 0 0;opacity:.92;font-size:12px}
+
+/* ====== CONTAINER ====== */
+.container{
+  max-width:1180px;
+  margin: 0 auto;
+  padding: 22px 20px 60px;
+}
+
+/* ====== GRID ====== */
+.main{
+  display:grid;
+  gap:18px;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+/* ====== CARD BASE ====== */
+.card{
+  background: linear-gradient(180deg, #133f8f 0%, #0e357a 100%);
+  border:1px solid var(--stroke);
+  border-radius:16px;
+  box-shadow:
+    0 10px 24px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.04);
+  padding:16px;
+}
+.cardTitle{
+  margin:0 0 10px;
+  font-size:15px;
+  letter-spacing:.2px;
+  font-weight:900;
+}
+.cardBody{ font-size:14px; }
+
+/* grid areas (desktop) */
+.card[data-area="dados"]      { grid-column: span 8; }
+.card[data-area="alergias"]   { grid-column: span 4; }
+.card[data-area="meds"]       { grid-column: span 5; }
+.card[data-area="historico"]  { grid-column: span 7; }
+.card[data-area="exames"]     { grid-column: span 6; }
+.card[data-area="vacinas"]    { grid-column: span 6; }
+.card[data-area="agenda"]     { grid-column: span 12; }
+
+/* responsivo */
+@media (max-width: 1100px){
+  .card[data-area="dados"]     { grid-column: span 12; }
+  .card[data-area="alergias"]  { grid-column: span 12; }
+  .card[data-area="meds"]      { grid-column: span 12; }
+  .card[data-area="historico"] { grid-column: span 12; }
+  .card[data-area="exames"]    { grid-column: span 12; }
+  .card[data-area="vacinas"]   { grid-column: span 12; }
+}
+
+/* pequenos utilitários */
+.duo{
+  display:grid;
+  grid-template-columns: repeat(2, minmax(0,1fr));
+  gap:12px;
+}
+.duo label{
+  display:block;
+  font-size:12px;
+  opacity:.85;
+  margin-bottom:2px;
+}
+.duo p{ margin:0 }
+
+.list{
+  margin:0;
+  padding-left:18px;
+  display:grid;
+  gap:6px;
+}
+
+/* timeline */
+.timeline{
+  list-style:none;
+  margin:0;
+  padding:0;
+  display:grid;
+  gap:12px;
+}
+.timeline li{
+  display:grid;
+  grid-template-columns: 90px 1fr;
+  gap:12px;
+}
+.time{
+  display:inline-block;
+  padding:6px 10px;
+  background:#0d3f98;
+  border:1px solid var(--stroke-soft);
+  border-radius:999px;
+  font-weight:800;
+  font-size:12px;
+  text-align:center;
+}
+
+/* tabela */
+.table{
+  width:100%;
+  border-collapse:separate;
+  border-spacing:0;
+  font-size:14px;
+}
+.table th,.table td{
+  padding:12px 12px;
+  border-bottom:1px solid var(--stroke-soft);
+}
+.table thead th{
+  text-align:left;
+  font-size:12px;
+  opacity:.93;
+}
+
+/* “linhas” suaves de destaque */
+.hr{
+  height:1px;
+  background: var(--stroke-soft);
+  margin:10px 0 8px;
+  border-radius:999px;
+}

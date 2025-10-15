@@ -1,0 +1,114 @@
+/* Fundo azul e centralização */
+.container {
+  background-color: #1B4EA5; /* azul pedido */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px; /* Diminuído para subir os botões */
+  font-family: Arial, sans-serif;
+}
+
+/* Logo e texto próximo */
+.logo {
+  width: 340px;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Texto "Um sonho possível de realizar" próximo da logo */
+.sonho-texto {
+  display: block;
+  color: #FBBF24; /* amarelo dourado */
+  font-size: 18px;
+  margin-top: 2; /* perto da logo */
+  margin-bottom: 100px; /* menos espaçamento abaixo para aproximar os botões */
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Subtítulo (frase amarela) */
+.subtitle {
+  color: #FBBF24; /* amarelo dourado */
+  font-size: 20px;
+  margin-bottom: 10px; /* diminuiu para subir os botões */
+}
+
+/* Título "Especializações" */
+.title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 20px; /* diminuiu para subir os botões */
+}
+
+/* Container dos botões */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px; /* diminuiu para subir mais */
+}
+
+/* Botões */
+.buttons button {
+  background-color: #0284C7; /* azul claro */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  width: 250px;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+/* Efeito hover */
+.buttons button:hover {
+  background-color: #0369A1;
+}
+
+/* Estilos para tela de especialidade */
+.tela-especialidade {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin-bottom: 20px;
+}
+
+.lista-especialidades {
+  display: flex;
+  flex-direction: column; /* Agora fica na vertical */
+  gap: 30px; /* Espaço maior entre os botões */
+  width: 250px;
+  margin-top: 40px; /* Espaço extra acima dos botões */
+}
+
+.botao-especialidade {
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.botao-especialidade:hover {
+  background-color: #0056b3;
+}
+

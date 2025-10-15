@@ -1,0 +1,46 @@
+@import url(main.css);
+@import url(button.css);
+
+.docs {
+  box-sizing: border-box;
+  display: grid;
+  gap: 24px;
+  margin: 0 auto;
+  max-width: 1040px;
+  padding: 60px 16px;
+}
+
+.docs h1 {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0.25px;
+}
+
+.docs__item strong {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+
+ol {
+  padding-left: 24px;
+  list-style: decimal;
+}
+
+ul {
+  padding-left: 24px;
+  list-style: disc;
+}
+
+.docs__item {
+  display: grid;
+  gap: 8px;
+}

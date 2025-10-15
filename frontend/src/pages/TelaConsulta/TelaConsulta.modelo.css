@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.container {
+  background-color: #1847A1; /* azul forte */
+  min-height: 100vh;
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  line-height: 1;
+  font-weight: 600;
+}
+
+.logo {
+  width: 160px;
+  margin-bottom: 10px;
+}
+
+.slogan {
+  color: #FFD43B; /* amarelo */
+  font-size: 20px;
+  margin: 0 0 30px 0;
+  font-weight: 500;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.form {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.input-text,
+.input-data,
+.input-select {
+  background-color: #3A74D4; /* azul médio */
+  border: none;
+  padding: 10px 14px;
+  color: white;
+  font-size: 14px;
+  border-radius: 4px;
+}
+
+.input-text::placeholder,
+.input-data::placeholder,
+.input-select {
+  color: #BBD2F5; /* azul claro */
+}
+
+.input-select option {
+  color: black;
+}
+
+.linha-dupla {
+  display: flex;
+  gap: 10px;
+}
+
+.input-data {
+  flex: 1;
+}
+
+.input-select {
+  flex: 1;
+}
+
+.btn-agendar {
+  margin-top: 10px;
+  background-color: #B42A2A; /* vermelho escuro */
+  border: none;
+  color: white;
+  font-size: 14px;
+  padding: 10px 0;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #8B1F1F; /* vermelho mais escuro no hover */
+}

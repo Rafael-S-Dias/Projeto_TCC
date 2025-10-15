@@ -1,0 +1,51 @@
+/* Mesmo padrão visual do Login */  /* :contentReference[oaicite:4]{index=4} */
+
+.container{
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  min-height:100vh;
+  background: linear-gradient(135deg, #1B4EA5 0%, #003d7a 100%);
+  padding:20px;
+}
+
+.header{ text-align:center; margin-bottom:32px; }
+.logo{ display:block; width:340px; height:auto; margin:0 auto 6px; }
+.subtitulo{ margin:10px 0 0 0; font-weight:700; font-size:14px; line-height:1.2; color:#fff; }
+
+.box {
+  background: transparent;
+  padding: 28px;
+  width: 100%;
+  max-width: 1024px;
+}
+
+.titulo{ color:#ffffff; margin:0 0 20px; font-size:1.6rem; font-weight:700; }
+
+.grid{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:16px; }
+.inputGroup{ margin-bottom:6px; }
+.inputGroupFull{ grid-column:1 / -1; }
+
+.label{ display:block; margin-bottom:8px; font-weight:700; color:#ffffff; }
+.input, .textarea{
+  width:100%; padding:14px 12px;
+  border:2px solid #99bce8; border-radius:8px; font-size:16px;
+  background:#fff; color:#0f172a; transition:border-color .3s, box-shadow .3s;
+  box-sizing:border-box;
+}
+.input:hover, .textarea:hover{ border-color:#9ab7e7; }
+.input::placeholder, .textarea::placeholder{ color:#64748b; opacity:1; }
+.input:focus, .textarea:focus{
+  outline:none; border-color:#0066cc; box-shadow:0 0 0 3px rgba(0,102,204,.25);
+}
+
+.actions{ margin-top:18px; display:flex; gap:12px; justify-content:flex-end; }
+.botao{
+  padding:14px 18px; background:#0066cc; color:#fff; border:none; border-radius:8px;
+  cursor:pointer; font-size:16px; font-weight:600; transition:background-color .3s;
+}
+.botao:hover{ background:#0052a3; }
+.botaoSec{
+  padding:14px 18px; background:#fff; color:#0f172a; border:2px solid #e5e7eb; border-radius:8px;
+  cursor:pointer; font-size:16px; font-weight:600;
+}
+
+@media (max-width:800px){ .grid{ grid-template-columns:1fr; } .box{ padding:20px; } }

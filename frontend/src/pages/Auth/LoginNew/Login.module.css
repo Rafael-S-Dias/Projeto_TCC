@@ -1,0 +1,167 @@
+/* ===== Container principal (fundo azul gradiente) ===== */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;   /* centraliza de verdade */
+  min-height: 100vh;
+  background: linear-gradient(135deg, #1B4EA5 0%, #1B4EA5 100%);
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;  /* aumenta espaço entre header e loginBox */
+}
+
+.titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitulo {
+  margin: 10px 0 0 0;   /* cria uma margem superior entre a logo e a frase */
+  font-weight: 700;     /* mantém negrito */
+  font-size: 14px;
+  line-height: 1.2;
+  color: #ffffff;       /* deixa o texto branco */
+}
+
+.logo {
+  display: block;       
+  width: 340px;         /* tamanho como na sua 2ª imagem */
+  height: auto;
+  margin: 0 auto 6px;   /* cola a frase logo abaixo */
+}
+
+/* ===== Box de login ===== */
+.loginBox {
+  background: #ffffff;
+  padding: 32px;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+}
+
+.loginTitulo {
+  color: #0066cc;
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+/* ===== Inputs ===== */
+.inputGroup {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;        
+  color: #1f2937;
+}
+
+.inputContainer {
+  position: relative;
+}
+
+.input {
+  width: 100%;
+  padding: 14px 44px 14px 12px;   /* espaço extra à direita p/ o ícone */
+  border: 2px solid #99bce8;      /* Borda azul mais visível */
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #fff;
+  color: #0f172a;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  box-sizing: border-box;         /* garante alinhamento */
+}
+
+.input:hover {
+  border-color: #9ab7e7;
+}
+
+.input::placeholder {
+  color: #64748b;
+  opacity: 1;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #0066cc;          
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.25);
+}
+
+/* Botão olho */
+.olho {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: 0;
+  cursor: pointer;
+  font-size: 20px;
+  color: #475569;
+}
+
+/* ===== Botão Entrar ===== */
+.botao {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #0066cc;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s;
+}
+
+.botao:hover {
+  background: #0052a3;
+}
+
+/* ===== Links ===== */
+.links {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link { 
+  color: #1b68d1; 
+  text-decoration: none; 
+  font-size: 14px; 
+  transition: color 0.3s; 
+}
+
+.link:hover { 
+  color: #0f4fa6; 
+  text-decoration: underline; 
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 480px) {
+  .loginBox {
+    padding: 20px;
+  }
+  
+  .links {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .link {
+    text-align: center;
+  }
+}

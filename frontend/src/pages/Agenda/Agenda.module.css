@@ -1,0 +1,94 @@
+:root{
+  --azul:#1B4EA5;
+  --azul-escuro:#0e2f69;
+  --card:#113e8f;
+  --stroke:rgba(255,255,255,.18);
+  --white:#fff;
+}
+
+.wrapper{ min-height:100dvh; background: var(--azul); color: var(--white); }
+
+/* Header */
+.header{ position: sticky; top:0; z-index:5; background: var(--azul); border-bottom:1px solid var(--stroke); }
+.headerInner{ max-width:1180px; margin:0 auto; padding:14px 20px; display:flex; align-items:center; gap:12px; }
+.logo{ height:50px; }
+.title{ margin:0 0 0 8px; font-size:18px; font-weight:900; letter-spacing:.2px; }
+
+/* Container */
+.container{ max-width:1180px; margin:0 auto; padding:20px; }
+
+/* Filtros */
+.filters{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; margin-bottom:18px; }
+.segment{ background: rgba(0,0,0,.12); border:1px solid var(--stroke); padding:6px; border-radius:12px; display:flex; gap:6px; }
+.segmentBtn{ background: transparent; border:0; color:#fff; padding:8px 12px; border-radius:10px; font-weight:700; cursor:pointer; }
+.segmentBtn:hover{ background: rgba(255,255,255,.12); }
+.active{ background:#1754ad; }
+
+.search{
+  margin-left:auto;
+  min-width:260px;
+  background: rgba(0,0,0,.12);
+  color:#fff;
+  border:1px solid var(--stroke);
+  border-radius:12px;
+  padding:10px 12px;
+  outline: none;
+}
+
+/* Listas */
+.sectionTitle{ margin:14px 0 8px; font-size:14px; opacity:.95; }
+.empty{ padding:20px; background: rgba(0,0,0,.12); border:1px solid var(--stroke); border-radius:12px; }
+.list{ display:grid; gap:12px; }
+
+/* Item */
+.item{
+  display:grid;
+  grid-template-columns: 84px 1fr auto;
+  gap:14px;
+  align-items:center;
+  background: linear-gradient(180deg, #133f8f 0%, #0e357a 100%);
+  border:1px solid var(--stroke);
+  border-radius:14px;
+  padding:12px;
+  box-shadow:0 10px 22px rgba(0,0,0,.15);
+}
+
+.iconWrap{
+  width:64px;height:64px;border-radius:14px;
+  background:#fff; display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+.icon{ width:36px;height:36px;color:#0e2f69; }
+
+.iconWrap[data-tipo="consulta"] .icon{ color:#0e2f69; }
+.iconWrap[data-tipo="exame"] .icon{ color:#0a5f4f; }
+.iconWrap[data-tipo="retirada"] .icon{ color:#6a3fb3; }
+.iconWrap[data-tipo="retorno"] .icon{ color:#974600; }
+
+.titulo{ margin:0 0 2px; font-size:16px; font-weight:900; letter-spacing:.2px; }
+.meta{ margin:0; opacity:.9; font-size:13px; }
+.obs{ margin:6px 0 0; font-size:12px; opacity:.9; }
+
+.itemRight{ display:flex; align-items:flex-end; gap:10px; }
+.data{ text-align:right; margin-right:4px; }
+.dia{ display:block; font-weight:800; }
+.hora{ display:block; font-size:12px; opacity:.9; }
+
+.badge{
+  display:inline-block; padding:6px 10px; border-radius:999px;
+  font-size:12px; font-weight:800;
+  border:1px solid rgba(255,255,255,.25);
+  text-transform: capitalize;
+  background: rgba(255,255,255,.12);
+}
+.st-agendado{ background:#314e86; }
+.st-confirmado{ background:#2f7a34; }
+.st-realizado{ background:#2b5a2b; opacity:.9; }
+.st-cancelado{ background:#7a2b2b; }
+
+/* Responsivo */
+@media (max-width: 760px){
+  .item{ grid-template-columns: 64px 1fr; }
+  .itemRight{ justify-self: start; margin-top:8px; }
+  .search{ min-width:unset; flex:1; }
+}

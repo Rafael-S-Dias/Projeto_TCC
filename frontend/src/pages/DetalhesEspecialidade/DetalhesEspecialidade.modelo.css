@@ -1,0 +1,51 @@
+/* Fundo da página */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #1B4EA5; /* Cor principal do fundo */
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Container do conteúdo */
+.detalhe-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background: #ffffff; /* Fundo branco para destacar o conteúdo */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  color: #333;
+}
+
+/* Título */
+.detalhe-container h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1B4EA5; /* Azul da sua paleta */
+}
+
+/* Texto */
+.detalhe-container p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+  color: #444;
+}
+
+/* Botão */
+.detalhe-container button {
+  background-color: #1B4EA5; /* Azul principal */
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.detalhe-container button:hover {
+  background-color: #163c7e; /* Azul mais escuro no hover */
+}

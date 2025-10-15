@@ -1,0 +1,198 @@
+.login {
+  align-items: start;
+  background-color: #1b4ea5;
+  display: grid;
+  justify-items: center;
+  width: 100vw;
+}
+
+.login .overlap_group_wrapper {
+  background-color: #1b4ea5;
+  height: 1117px;
+  width: 1728px;
+}
+
+.login .overlap_group_2 {
+  height: 1197px;
+  left: 245px;
+  position: relative;
+  top: -288px;
+  width: 1230px;
+}
+
+.login .rectangle_fundo {
+  background-color: #d9d9d9bf;
+  height: 493px;
+  left: 547px;
+  position: absolute;
+  top: 584px;
+  width: 634px;
+}
+
+.login .rectangle_incolor {
+  -webkit-backdrop-filter: blur(43.6px) brightness(100%);
+  backdrop-filter: blur(43.6px) brightness(100%);
+  background-color: #d9d9d901;
+  border-radius: 55px;
+  box-shadow: inset -43.6px 43.6px 43.6px #ffffff1a, inset 43.6px -43.6px 43.6px
+    #a4a4a41a;
+  height: 525px;
+  left: 447px;
+  position: absolute;
+  top: 552px;
+  width: 783px;
+}
+
+.login .esqueci_a_senha_2 {
+  color: #e53935;
+  display: block;
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 968px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1015px;
+  white-space: nowrap;
+}
+
+.login .text_wrapper_18 {
+  color: #e53935;
+  font-family: "Roboto", Helvetica;
+  font-size: 20px;
+  font-weight: 700;
+  left: 603px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  top: 1015px;
+  white-space: nowrap;
+}
+
+.login .login_cima {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    175deg,
+    rgba(59, 76, 202, 1) 0%,
+    rgba(20, 23, 60, 1) 93%
+  );
+  background-clip: text;
+  color: transparent;
+  font-family: "Nova Flat", Helvetica;
+  font-size: 48px;
+  font-weight: 400;
+  height: 58px;
+  left: 804px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 583px;
+}
+
+.login .imagem {
+  align-items: center;
+  display: inline-flex;
+  gap: 10px;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  top: 496px;
+}
+
+.login .design_sem_nome {
+  aspect-ratio: 1;
+  height: 681px;
+  object-fit: cover;
+  position: relative;
+  width: 681px;
+}
+
+.login .line_3 {
+  height: 1px;
+  left: 639px;
+  object-fit: cover;
+  position: absolute;
+  top: 724px;
+  width: 480px;
+}
+
+.login .line_4 {
+  height: 1px;
+  left: 639px;
+  object-fit: cover;
+  position: absolute;
+  top: 827px;
+  width: 480px;
+}
+
+.login .div_wrapper {
+  background: linear-gradient(
+    180deg,
+    rgba(26, 35, 126, 1) 55%,
+    rgba(0, 0, 0, 1) 84%
+  );
+  border-radius: 55px;
+  height: 42px;
+  left: 692px;
+  overflow: hidden;
+  position: absolute;
+  top: 881px;
+  width: 375px;
+}
+
+.login .text_wrapper_19 {
+  color: #ffffff;
+  font-family: "Nova Oval", Helvetica;
+  font-size: 32px;
+  font-weight: 400;
+  height: 39px;
+  left: 148px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: -2px;
+}
+
+.login .component_1 {
+  background-color: unset !important;
+  left: 642px !important;
+  position: absolute !important;
+  top: 681px !important;
+}
+
+.login .component_3 {
+  background-color: unset !important;
+  left: 639px !important;
+  position: absolute !important;
+  top: 786px !important;
+}
+
+.login .text_wrapper_20 {
+  color: #ffeb3b;
+  font-family: "Nova Slim", Helvetica;
+  font-size: 36px;
+  font-weight: 400;
+  height: 6px;
+  left: 549px;
+  letter-spacing: 0.72px;
+  line-height: 15px;
+  position: absolute;
+  text-align: center;
+  top: 464px;
+  white-space: nowrap;
+  width: 574px;
+}
+
+.login .image-2 {
+  aspect-ratio: 1;
+  height: 776px;
+  left: 452px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 776px;
+}

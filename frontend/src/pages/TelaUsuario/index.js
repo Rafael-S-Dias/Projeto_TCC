@@ -1,0 +1,1 @@
+export { TelaUsuario } from "./TelaUsuario";

@@ -1,0 +1,135 @@
+.first-screen {
+  align-content: center;
+  background: var(--brand-primary);
+  box-sizing: border-box;
+  display: grid;
+  min-height: calc(100vh - 72px);
+  padding: 40px 20px;
+  position: relative;
+}
+
+.first-screen__background {
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.first-screen__background img {
+  border: 0;
+  height: 100%;
+  object-fit: cover;
+  width: 100%;
+}
+
+.first-screen__content {
+  box-sizing: border-box;
+  display: grid;
+  gap: 36px;
+  height: 100%;
+  margin: 0 auto;
+  position: relative;
+  width: 100%;
+  z-index: 3;
+}
+
+.first-screen__title {
+  color: var(--white-100);
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+
+.first-screen__paragraph {
+  color: #fff;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+}
+
+.first-screen__button {
+  margin: 0 auto;
+  max-width: 335px;
+}
+
+.first-screen__header {
+  display: grid;
+  gap: 8px;
+}
+
+.first-screen__download {
+  /* display: grid; */
+  display: none;
+  gap: 8px 10px;
+  grid-template-columns: max-content max-content;
+  justify-content: center;
+}
+
+.first-screen__download-title {
+  color: var(--white-100);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  grid-column: 1/3;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .first-screen {
+    min-height: calc(100vh - 120px);
+    padding: 48px 28px;
+  }
+
+  .first-screen__background img {
+    object-position: top center;
+  }
+
+  .first-screen__content {
+    margin: 0 auto;
+    max-width: 1040px;
+  }
+
+  .first-screen__title {
+    max-width: 650px;
+    text-align: left;
+  }
+
+  .first-screen__paragraph {
+    max-width: 650px;
+    text-align: left;
+  }
+
+  .first-screen__button {
+    margin: 0 auto 0 0;
+    max-width: 320px;
+  }
+
+  .first-screen__download {
+    justify-content: start;
+  }
+
+  .first-screen__download-title {
+    text-align: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .first-screen {
+    padding: 72px 40px;
+  }
+}

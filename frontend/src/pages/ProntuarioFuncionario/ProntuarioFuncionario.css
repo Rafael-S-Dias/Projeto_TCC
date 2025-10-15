@@ -1,0 +1,94 @@
+/* Container geral com mais respiro */
+.pf-container{
+  max-width:1100px;
+  margin:0 auto;
+  padding:48px 24px 24px; /* ↑ desce o conteúdo */
+  color:#fff;
+}
+
+/* Topo com logo + voltar */
+.pf-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:10px;
+}
+.pf-brand{ display:inline-flex; align-items:center; gap:8px; }
+.pf-logo{ height:50px; width:auto; }
+
+/* Botão Voltar */
+.pf-back{
+  background:rgba(255,255,255,.16);
+  color:#fff;
+  padding:8px 12px;
+  border-radius:10px;
+  text-decoration:none;
+  font-weight:600;
+}
+.pf-back:hover{ background:rgba(255,255,255,.24); }
+
+/* Título + subtítulo, com espaço extra abaixo */
+.pf-header{ margin:6px 0 14px; }
+.pf-header h1{ font-size:26px; margin:0 0 4px; }
+.pf-header p{ opacity:.9; margin:0; }
+
+/* Cards */
+.pf-card{
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(6px);
+  border-radius:16px;
+  padding:16px 18px;
+  margin-top:18px;         /* afasta mais do topo */
+  box-shadow:0 8px 20px rgba(0,0,0,.15);
+}
+
+/* elevação sutil para o card de busca */
+.pf-elevated{ transform:translateY(4px); }
+
+/* Form */
+.pf-row{ display:flex; gap:12px; flex-wrap:wrap; align-items:end; }
+.pf-group{ min-width:220px; }
+.pf-grow{ flex:1; }
+
+label{ font-size:12px; opacity:.9; display:block; margin:0 0 6px; }
+.pf-toggle{ display:flex; gap:8px; }
+.pf-chip{
+  background:rgba(255,255,255,.18);
+  border:0; border-radius:12px;
+  padding:8px 12px; color:#fff; cursor:pointer;
+}
+.pf-chip--active{ background:#fff; color:#1f4ea6; }
+
+.pf-input{
+  width:100%; padding:10px 12px; border-radius:10px;
+  border:0; background:#fff; color:#0d1b2a; outline:none;
+}
+
+.pf-btn{
+  background:#fff; color:#1f4ea6; border:0;
+  border-radius:12px; padding:10px 14px; font-weight:600; cursor:pointer;
+}
+.pf-btn:disabled{ opacity:.6; cursor:not-allowed; }
+.pf-btn--ghost{ background:rgba(255,255,255,.16); color:#fff; }
+.pf-btn--mini{ padding:6px 10px; border-radius:10px; }
+
+.pf-error{ color:#ffb4b4; margin-top:10px; }
+
+/* Resultado */
+.pf-result h2{ margin:0 0 4px; }
+.pf-result-head{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.pf-badges{ display:flex; gap:8px; flex-wrap:wrap; }
+.pf-badge{ padding:6px 10px; border-radius:999px; font-size:12px; }
+.pf-badge.ok{ background:#22c55e; color:#fff; }
+.pf-badge.warn{ background:#facc15; color:#111; }
+.pf-badge.soft{ background:rgba(255,255,255,.18); color:#fff; }
+.pf-actions{ display:flex; gap:10px; margin-top:12px; flex-wrap:wrap; }
+
+/* Recentes */
+.pf-recentes{ margin-top:18px; }
+.pf-grid{ display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:10px; }
+.pf-recent-card{ display:flex; justify-content:space-between; align-items:center; background:rgba(255,255,255,.08); border-radius:12px; padding:10px 12px; }
+.pf-recent-info{ min-width:0; }
+.pf-truncate{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis; display:block; }
+.pf-sub{ font-size:12px; opacity:.85; }

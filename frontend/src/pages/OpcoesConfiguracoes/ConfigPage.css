@@ -1,0 +1,84 @@
+.config-layout {
+  display: flex;
+  height: 100vh;
+  background: #1B4EA5;
+  color: #fff;
+  font-family: "Arial", sans-serif;
+  position: relative;
+}
+
+/* Botão X */
+.btn-fechar {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.btn-fechar:hover {
+  color: #ffda6b; /* amarelo ao hover */
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem 1rem;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar h3 {
+  margin-bottom: 1.5rem;
+  color: #ffda6b;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 0.8rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.sidebar li.active {
+  background: #ffda6b;
+  color: #1B4EA5;
+  font-weight: bold;
+}
+
+/* Conteúdo */
+.content {
+  flex: 1;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+}
+
+.options-list li {
+  margin-bottom: 1rem;
+}
+
+.link {
+  margin-left: 10px;
+  color: #ffda6b;
+  cursor: pointer;
+  font-weight: bold;
+}

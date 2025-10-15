@@ -1,0 +1,134 @@
+.weare {
+  box-sizing: border-box;
+  padding: 24px 20px 48px;
+}
+
+.weare__wrapper {
+  box-sizing: border-box;
+  display: grid;
+  gap: 24px;
+}
+
+.weare__title {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0.25px;
+}
+
+.weare__content-title {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.weare__content-text {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+}
+
+.weare__content-text_pb8 {
+  padding-bottom: 8px;
+}
+
+.weare__content-text_pt16 {
+  padding-top: 16px;
+}
+
+.weare__image {
+  display: block;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.weare__image img {
+  border: 0;
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.weare__content {
+  display: grid;
+  gap: 40px;
+}
+
+.weare__text-grid {
+  display: grid;
+  gap: 12px;
+}
+
+.weare__content-list {
+  padding-left: 12px;
+}
+
+.weare__content-list li {
+  color: var(--black-80);
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px; /* 155.556% */
+  letter-spacing: 0.25px;
+  padding-left: 16px;
+  position: relative;
+}
+
+.weare__content-list li:before {
+  background: var(--black-80);
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 5px;
+  left: 0;
+  position: absolute;
+  top: 12px;
+  width: 5px;
+}
+
+@media (min-width: 768px) {
+  .weare {
+    padding: 40px 28px;
+  }
+
+  .weare__wrapper {
+    background: var(--white-100);
+    border-radius: 12px;
+    gap: 32px;
+    margin: 0 auto;
+    max-width: 1040px;
+    padding: 40px 32px;
+  }
+
+  .weare__title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .weare__content-title {
+    font-size: 22px;
+    line-height: 32px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .weare {
+    padding: 40px;
+  }
+
+  .weare__title {
+    text-align: center;
+  }
+}

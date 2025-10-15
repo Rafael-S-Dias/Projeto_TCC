@@ -1,0 +1,187 @@
+/*
+  LOGO
+*/
+.nuza-logo {
+      position: fixed;   /* fica fixa na tela */
+    top: 10px;         /* distância do topo */
+    left: 20px;        /* canto esquerdo */
+    height: 180px;     /* tamanho grande só pra logo */
+    width: auto;
+    z-index: 1101;     /* fica acima do header */
+}
+/*
+  =============================
+  ESTILOS GLOBAIS (HOME BASE)
+  =============================
+*/
+body, html {
+    margin: 0; /* Remove a margem padrão do navegador. */
+    padding: 0; /* Remove o padding padrão. */
+    font-family: Arial, sans-serif; /* Define a fonte do texto. */
+    background-color: #1B4EA5; /* Cor de fundo unificada da página. */
+}
+
+/*
+  =============================
+  CABEÇALHO (HEADER) - HOME
+  =============================
+*/
+.header-nav {
+    display: flex;
+    align-items: center;
+    background-color: #1B4EA5;
+    color: #fff;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.header-nav .logo img {
+    height: 40px;
+}
+
+.header-nav .menu-items {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.header-nav .menu-items a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 11px;
+    white-space: nowrap;
+}
+
+.header-nav .side-icon img {
+    height: 25px;
+    margin-left: 15px;
+}
+
+/*
+  =============================
+  CONTEÚDO PRINCIPAL (MAIN) - HOME
+  =============================
+*/
+.main-content {
+    padding-top: 60px; /* Espaço por causa do header fixo */
+    padding-bottom: 80px; /* Espaço por causa do footer fixo */
+}
+
+/*
+  =============================
+  CARROSSEL - HOME
+  =============================
+*/
+.carousel {
+    display: flex;
+    overflow-x: scroll;
+    padding: 20px 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+}
+
+/* Oculta a barra de rolagem */
+.carousel::-webkit-scrollbar {
+    display: none;
+}
+.carousel {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* ITEM DO CARROSSEL
+  Numerados para facilitar manutenção
+*/
+
+/* 🔹 CARROSSEL ITEM #1 */
+.carousel-item {
+    flex: 0 0 80%;
+    max-width: 550px;
+    height: 400px;
+    margin: 0 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    scroll-snap-align: center;
+    position: relative;
+}
+
+/* 🔹 CARROSSEL ITEM #2 (imagem) */
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+/* 🔹 CARROSSEL ITEM #3 (texto em overlay) */
+.carousel-item .overlay-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 15px;
+    text-align: left;
+    line-height: 1.2;
+}
+
+.carousel-item .overlay-text h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
+/* 🔹 CARROSSEL ITEM #4 (link "Saiba mais") */
+.carousel-item .saiba-mais {
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 5px;
+    color: #fff;
+    text-decoration: none;
+}
+
+/*
+  =============================
+  RODAPÉ (FOOTER) - HOME
+  =============================
+*/
+.footer-nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: #1B4EA5;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.nav-item img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 5px;
+}
+
+.nav-item p {
+    margin: 0;
+    font-size: 12px;
+    white-space: nowrap;
+}

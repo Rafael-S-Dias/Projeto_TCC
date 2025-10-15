@@ -1,0 +1,330 @@
+:root {
+  --rp-blue: #1f4ea1;
+  --rp-white: #fff;
+  --rp-glass: rgba(255, 255, 255, 0.15);
+  --rp-glass-strong: rgba(255, 255, 255, 0.25);
+}
+
+.rp-screen {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--rp-blue);
+  color: var(--rp-white);
+}
+
+.rp-statusbar {
+  height: 10px;
+  background: #fff;
+  opacity: 0.9;
+}
+
+.rp-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 22px;
+}
+
+.rp-logo-img {
+  height: 50px; /* logo aumentada */
+}
+
+.rp-logo-fallback {
+  display: none;
+  font-weight: 900;
+  font-size: 24px;
+}
+
+.rp-slogan {
+  font-size: 14px;
+  margin-left: 6px;
+  opacity: 0.9;
+}
+
+.rp-main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px 28px;
+  gap: 26px;
+}
+
+/* ==== Formulário (glass) ==== */
+.rp-form {
+  width: min(680px, 95vw);
+  background: var(--rp-glass);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  padding: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.rp-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rp-field label {
+  font-weight: 600;
+  font-size: 15px;
+}
+
+/* Campos de formulário */
+.rp-field input,
+.rp-field select,
+.rp-field textarea {
+  padding: 10px 12px;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1b1b1b;
+  transition: background 0.2s, color 0.2s;
+}
+
+/* Mantém a cor mesmo ao clicar/focar */
+.rp-field input:focus,
+.rp-field select:focus,
+.rp-field textarea:focus {
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #1b1b1b;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.3);
+}
+
+/* Corrige cor das opções do select */
+.rp-field select option {
+  background-color: #ffffff;
+  color: #1b1b1b;
+}
+
+/* Placeholder do select ("Selecione") */
+.rp-field select:invalid {
+  color: #6b6b6b;
+}
+
+/* Evita piscar de cor quando clica */
+.rp-field select:active,
+.rp-field select:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: #1b1b1b;
+}
+
+.rp-field textarea {
+  resize: vertical;
+  min-height: 84px;
+}
+
+/* Botão enviar */
+.rp-submit {
+  background: var(--rp-glass-strong);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  padding: 12px;
+  border-radius: 10px;
+  color: var(--rp-white);
+  font-weight: 700;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+}
+
+.rp-submit:hover {
+  background: rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* ==== Listagem ==== */
+.rp-list-wrap {
+  width: min(1100px, 95vw);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.rp-list-title {
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.3px;
+}
+
+.rp-table {
+  background: var(--rp-glass);
+  backdrop-filter: blur(6px);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.rp-thead,
+.rp-row {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr 0.6fr 1.2fr 0.5fr;
+  gap: 0;
+}
+
+.rp-thead {
+  font-weight: 700;
+  background: rgba(255, 255, 255, 0.22);
+  padding: 14px 16px;
+}
+
+.rp-tbody .rp-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.rp-row .rp-col,
+.rp-thead > div {
+  padding: 12px 16px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rp-col-obs {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.rp-col-paciente {
+  font-weight: 700;
+}
+
+.rp-th-acoes,
+.rp-col-acoes {
+  text-align: right;
+}
+
+.rp-btn {
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--rp-white);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.rp-btn:hover {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.rp-btn:active {
+  transform: translateY(0);
+}
+
+.rp-btn-danger {
+  border-color: rgba(255, 80, 80, 0.55);
+}
+
+.rp-empty {
+  background: var(--rp-glass);
+  padding: 18px;
+  border-radius: 12px;
+  text-align: center;
+  font-weight: 600;
+  opacity: 0.95;
+}
+
+/* Botão “voltar” */
+.rp-actions {
+  text-align: center;
+}
+
+.rp-back-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+  color: var(--rp-white);
+  font-weight: 700;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  backdrop-filter: blur(6px);
+  transition: transform 0.2s ease, box-shadow 0.2s ease,
+    background 0.2s ease, border-color 0.2s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+}
+
+.rp-back-btn::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    120deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: translateX(-120%);
+  transition: transform 0.6s ease;
+}
+
+.rp-back-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  background: rgba(255, 255, 255, 0.28);
+  border-color: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+
+.rp-back-btn:hover::after {
+  transform: translateX(120%);
+}
+
+.rp-back-btn:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.rp-bottom-shadow {
+  height: 12px;
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.3));
+}
+
+/* ==== Responsivo ==== */
+@media (max-width: 880px) {
+  .rp-thead,
+  .rp-row {
+    grid-template-columns: 1fr 0.9fr 0.7fr 0.9fr 0.6fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .rp-thead,
+  .rp-row {
+    grid-template-columns: 1.2fr 0.8fr 0.8fr 0.8fr 0.6fr;
+  }
+  .rp-col-obs {
+    display: none;
+  }
+  .rp-thead > div:nth-child(4) {
+    display: none;
+  }
+}
+/* Placeholders mais fortes e legíveis */
+.rp-field input::placeholder,
+.rp-field textarea::placeholder {
+  color: #4a5568;   /* cinza escuro legível */
+  opacity: 1;       /* remove o esmaecido padrão */
+}
+
+/* (opcional) compatibilidade ampla */
+.rp-field input::-webkit-input-placeholder,
+.rp-field textarea::-webkit-input-placeholder { color: #4a5568; opacity: 1; }
+.rp-field input::-moz-placeholder,
+.rp-field textarea::-moz-placeholder { color: #4a5568; opacity: 1; }
+.rp-field input:-ms-input-placeholder,
+.rp-field textarea:-ms-input-placeholder { color: #4a5568; opacity: 1; }
+.rp-field input::-ms-input-placeholder,
+.rp-field textarea::-ms-input-placeholder { color: #4a5568; opacity: 1; }

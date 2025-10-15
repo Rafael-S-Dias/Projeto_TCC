@@ -1,0 +1,62 @@
+.component {
+  background-color: #d9d9d9;
+  height: 49px;
+  position: relative;
+  width: 237px;
+}
+
+.component .textWrapper {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+}
+
+.component .div {
+  font-family: "Poppins", Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  height: 29px;
+  left: 4px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+}
+
+.component .property_1_default {
+  font-size: 20px;
+  height: 30px;
+  left: 4px;
+  top: 9px;
+}
+
+.component .property_1_variant3 {
+  font-size: 16px;
+  height: 24px;
+  left: 2px;
+  top: -15px;
+}
+
+.component .property_1_variant2 {
+  font-size: 16px;
+  height: 24px;
+  left: 2px;
+  top: -15px;
+}
+
+.component .property_1_0_default {
+  color: #000000;
+}
+
+.component .property_1_0_variant3 {
+  color: transparent;
+}
+
+.component .property_1_0_variant2 {
+  color: #000000;
+}

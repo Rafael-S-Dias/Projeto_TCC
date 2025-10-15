@@ -1,0 +1,21 @@
+
+.hamburger {
+  background: transparent url(../assets/imgs/hamburger-open.svg) center no-repeat;
+  border: 0;
+  cursor: pointer;
+  height: 24px; 
+  overflow: hidden;
+  text-indent: 40px;
+  white-space: nowrap;
+  width: 24px;
+}
+
+.hamburger_close {
+  background-image: url(../assets/imgs/hamburger-close.svg);
+}
+
+@media (min-width: 768px) {
+  .hamburger {
+    display: none;
+  }
+}

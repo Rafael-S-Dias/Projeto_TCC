@@ -1,0 +1,68 @@
+* {
+  /* margin: 0;
+  padding: 0;
+  box-sizing: border-box; */
+}
+
+:root {
+  --brand-primary: #3b3b3b;
+  --brand-assist: #2a65e7;
+  --white-100: #ffffff;
+  --white-95: rgba(255, 255, 255, 0.95);
+  --white-90: rgba(255, 255, 255, 0.9);
+  --white-80: rgba(255, 255, 255, 0.8);
+  --white-50: rgba(255, 255, 255, 0.5);
+  --white-10: rgba(255, 255, 255, 0.1);
+  --black-90: rgba(0, 0, 0, 0.9);
+  --black-80: rgba(0, 0, 0, 0.8);
+  --black-70: rgba(0, 0, 0, 0.7);
+  --black-50: rgba(0, 0, 0, 0.5);
+  --black-20: rgba(0, 0, 0, 0.2);
+  --black-10: rgba(0, 0, 0, 0.1);
+  --black-3: rgba(0, 0, 0, 0.03);
+  --black-2: rgba(0, 0, 0, 0.02);
+  --breakpoint-tablet: 768px;
+  --breakpoint-laptop: 1280px;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  background: linear-gradient(0deg, var(--black-3) 0%, var(--black-3) 100%),
+    #fff;
+  box-sizing: border-box;
+  color: #3b3b3b;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  padding: 0;
+  width: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.scroll {
+  scroll-margin-top: 72px;
+}
+
+@media (min-width: 768px) {
+  .scroll {
+    scroll-margin-top: 120px;
+  }
+}

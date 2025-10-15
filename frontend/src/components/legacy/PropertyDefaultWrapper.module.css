@@ -1,0 +1,83 @@
+.property_default_wrapper {
+  background-color: #d9d9d9;
+  height: 49px;
+  position: relative;
+  width: 480px;
+}
+
+.property_default_wrapper .text_wrapper_2 {
+  color: #000000;
+  font-family: "Poppins", Helvetica;
+  font-weight: 600;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+}
+
+.property_default_wrapper .text_wrapper_3 {
+  font-family: "Poppins", Helvetica;
+  font-size: 19px;
+  font-weight: 400;
+  height: 29px;
+  left: 8px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
+  text-align: center;
+  top: 11px;
+  width: 12px;
+}
+
+.property_default_wrapper .visibility_lock {
+  aspect-ratio: 1 !important;
+  height: 24px !important;
+  left: 442px !important;
+  position: absolute !important;
+  top: 13px !important;
+  width: 24px !important;
+}
+
+.property_default_wrapper .visibility_lock_3 {
+  aspect-ratio: 1 !important;
+  height: 24px !important;
+  left: 442px !important;
+  position: absolute !important;
+  top: 12px !important;
+  width: 24px !important;
+}
+
+.property_default_wrapper .property_1_1_default {
+  font-size: 20px;
+  height: 30px;
+  left: 2px;
+  top: 9px;
+  width: 132px;
+}
+
+.property_default_wrapper .property_1_1_variant_3 {
+  font-size: 16px;
+  height: 24px;
+  left: 14px;
+  top: -15px;
+  width: 105px;
+}
+
+.property_default_wrapper .property_1_1_variant_2 {
+  font-size: 16px;
+  height: 24px;
+  left: 14px;
+  top: -15px;
+  width: 105px;
+}
+
+.property_default_wrapper .property_1_2_default {
+  color: #000000;
+}
+
+.property_default_wrapper .property_1_2_variant_3 {
+  color: transparent;
+}
+
+.property_default_wrapper .property_1_2_variant_2 {
+  color: #000000;
+}

@@ -1,0 +1,125 @@
+/* Fundo geral */
+html, body, #root {
+  min-height: 100%;
+  background: #1B4EA5 !important; /* azul por toda a página */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: #fff;
+  overflow-x: hidden; /* previne qualquer faixa lateral por scroll horizontal */
+}
+
+/* Container principal */
+.nossa-historia-container {
+  position: relative;        /* para o ::before ficar atrás */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 3rem 1.5rem;
+  max-width: 1000px;         /* limite de largura */
+  margin: 0 auto;            /* centraliza no meio */
+  color: #fff;
+  border-radius: 0;
+  background: transparent;   /* deixa transparente para usar o azul do fundo */
+}
+
+/* Fundo azul fixo cobrindo a viewport (por trás do container) */
+.nossa-historia-container::before {
+  content: "";
+  position: fixed;
+  inset: 0;                  /* top/right/bottom/left = 0 */
+  background: #1B4EA5;       /* mesmo azul do projeto */
+  z-index: -1;               /* fica atrás do conteúdo */
+}
+
+/* Hero */
+.nossa-historia-hero {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1); /* leve transparência */
+  border-radius: 16px;
+}
+
+.nossa-historia-hero h1 {
+  font-size: 2.5rem;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+
+.nossa-historia-hero p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+}
+
+/* Conteúdo */
+.nossa-historia-content {
+  display: grid;
+  gap: 2rem;
+}
+
+.historia-texto {
+  padding: 1.5rem;
+  border-left: 5px solid #fff;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 8px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.historia-texto:hover {
+  transform: translateY(-3px);
+}
+
+.historia-texto h2 {
+  margin-bottom: 0.5rem;
+  color: #ffda6b; /* amarelo pra destacar títulos */
+}
+
+.historia-texto p {
+  color: #f1f1f1;
+  line-height: 1.6;
+}
+
+.nome-destaque {
+  font-weight: bold;
+  color: #ffda6b; /* destaque nos nomes */
+}
+
+.center-text {
+  text-align: center;
+}
+
+/* Ações */
+.nossa-historia-actions {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+/* Botão Voltar */
+.btn-voltar {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background-color: transparent; /* botão transparente */
+  border: 2px solid #fff;        /* borda branca */
+  color: #fff;                   /* texto branco */
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-voltar:hover {
+  background-color: #ffda6b; /* destaque no hover */
+  color: #1B4EA5;
+}
+
+/* Logo no bloco final (se estiver usando) */
+.logo-nuza {
+  max-width: 220px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto 0.75rem; /* centraliza e dá um respiro abaixo */
+}
